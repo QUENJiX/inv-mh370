@@ -200,9 +200,10 @@ export default function FlightMap() {
     const zoom = 4;
 
     // Bounds to show the full route
+    // Bounds to show the full route (Optimized)
     const bounds = [
-        [-45, 75],  // Southwest corner
-        [45, 125]   // Northeast corner
+        [-40, 85],   // Southwest corner (Southern Indian Ocean)
+        [42, 118]    // Northeast corner (Beijing/China)
     ];
 
     const resetMap = () => {
