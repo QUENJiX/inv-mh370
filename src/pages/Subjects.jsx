@@ -50,8 +50,8 @@ function FilterDropdown({ value, onChange, options, label, icon: Icon }) {
                                 setOpen(false);
                             }}
                             className={`w-full flex items-center gap-3 px-4 py-3 text-left transition-colors ${value === option.value
-                                    ? 'bg-red-600/20 text-red-400'
-                                    : 'hover:bg-neutral-800 text-neutral-300'
+                                ? 'bg-red-600/20 text-red-400'
+                                : 'hover:bg-neutral-800 text-neutral-300'
                                 }`}
                         >
                             {option.flag && <span className="text-lg">{option.flag}</span>}
@@ -71,15 +71,19 @@ export default function Subjects() {
     const [searchParams] = useSearchParams();
     const initialGroup = searchParams.get('group') || 'All';
     const initialClassification = searchParams.get('classification') || 'All';
+    const initialNationality = searchParams.get('nationality') || 'All';
 
     const [searchTerm, setSearchTerm] = useState('');
     const [selectedGroup, setSelectedGroup] = useState(initialGroup);
-    const [selectedNationality, setSelectedNationality] = useState('All');
+    const [selectedNationality, setSelectedNationality] = useState(initialNationality);
     const [selectedClassification, setSelectedClassification] = useState(initialClassification);
 
+    // Filter out "Investigation Flagged" from groups since it's covered by classification filter
     const groupOptions = [
         { value: 'All', label: 'All Groups' },
-        ...Object.values(GROUPS).map(g => ({ value: g, label: g }))
+        ...Object.values(GROUPS)
+            .filter(g => g !== GROUPS.INVESTIGATION)
+            .map(g => ({ value: g, label: g }))
     ];
 
     const nationalityOptions = [
@@ -99,6 +103,12 @@ export default function Subjects() {
         { value: CLASSIFICATION.UNREVIEWED, label: 'Unreviewed', color: 'gray' }
     ];
 
+    // Helper to get saved classification from localStorage (or fallback to original)
+    const getSubjectClassification = (subject) => {
+        const savedClassification = localStorage.getItem(`mh370_classification_${subject.id}`);
+        return savedClassification || subject.classification;
+    };
+
     const filteredSubjects = useMemo(() => {
         return SUBJECTS.filter(subject => {
             const matchesSearch =
@@ -107,7 +117,8 @@ export default function Subjects() {
                 String(subject.id).includes(searchTerm);
             const matchesGroup = selectedGroup === 'All' || subject.group === selectedGroup;
             const matchesNationality = selectedNationality === 'All' || subject.nationality === selectedNationality;
-            const matchesClassification = selectedClassification === 'All' || subject.classification === selectedClassification;
+            const effectiveClassification = getSubjectClassification(subject);
+            const matchesClassification = selectedClassification === 'All' || effectiveClassification === selectedClassification;
 
             return matchesSearch && matchesGroup && matchesNationality && matchesClassification;
         });
@@ -242,50 +253,55 @@ export default function Subjects() {
                     </div>
                 ) : (
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-                        {filteredSubjects.map(subject => (
-                            <Link
-                                key={subject.id}
-                                to={`/subject/${subject.id}`}
-                                className="subject-card bg-neutral-900/60 border border-neutral-800 rounded-xl p-5 hover:border-neutral-700 group"
-                            >
-                                <div className="flex items-start justify-between gap-3 mb-4">
-                                    <div className="flex items-center gap-3">
-                                        <div className={`w-10 h-10 rounded-lg border flex items-center justify-center ${subject.classification === CLASSIFICATION.PRIORITY
+                        {filteredSubjects.map(subject => {
+                            const effectiveClassification = getSubjectClassification(subject);
+                            return (
+                                <Link
+                                    key={subject.id}
+                                    to={`/subject/${subject.id}`}
+                                    className="subject-card bg-neutral-900/60 border border-neutral-800 rounded-xl p-5 hover:border-neutral-700 group"
+                                >
+                                    <div className="flex items-start justify-between gap-3 mb-4">
+                                        <div className="flex items-center gap-3">
+                                            <div className={`w-10 h-10 rounded-lg border flex items-center justify-center ${effectiveClassification === CLASSIFICATION.PRIORITY
                                                 ? 'bg-red-950/40 border-red-900/50 text-red-500'
-                                                : subject.classification === CLASSIFICATION.FLAGGED
+                                                : effectiveClassification === CLASSIFICATION.FLAGGED
                                                     ? 'bg-amber-950/40 border-amber-900/50 text-amber-500'
-                                                    : 'bg-neutral-950 border-neutral-800 text-neutral-600'
-                                            }`}>
-                                            <User className="w-5 h-5" />
+                                                    : effectiveClassification === CLASSIFICATION.CLEARED
+                                                        ? 'bg-green-950/40 border-green-900/50 text-green-500'
+                                                        : 'bg-neutral-950 border-neutral-800 text-neutral-600'
+                                                }`}>
+                                                <User className="w-5 h-5" />
+                                            </div>
+                                            <div>
+                                                <span className="text-[10px] font-mono text-neutral-600">
+                                                    #{String(subject.id).padStart(3, '0')}
+                                                </span>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <span className="text-[10px] font-mono text-neutral-600">
-                                                #{String(subject.id).padStart(3, '0')}
-                                            </span>
+                                        {getClassificationBadge(effectiveClassification)}
+                                    </div>
+
+                                    <h3 className="font-bold text-white text-sm mb-2 group-hover:text-red-400 transition-colors line-clamp-1">
+                                        {subject.name}
+                                    </h3>
+
+                                    <div className="text-[10px] text-neutral-500 uppercase tracking-wider mb-3 line-clamp-1">
+                                        {subject.role}
+                                    </div>
+
+                                    <div className="flex items-center justify-between">
+                                        <div className="flex items-center gap-2 text-xs text-neutral-600">
+                                            <span>{NATIONALITIES[subject.nationality]?.flag}</span>
+                                            <span>{subject.nationality}</span>
+                                            <span>•</span>
+                                            <span>Age {subject.age}</span>
                                         </div>
+                                        <ChevronRight className="w-4 h-4 text-neutral-700 group-hover:text-red-500 transition-colors" />
                                     </div>
-                                    {getClassificationBadge(subject.classification)}
-                                </div>
-
-                                <h3 className="font-bold text-white text-sm mb-2 group-hover:text-red-400 transition-colors line-clamp-1">
-                                    {subject.name}
-                                </h3>
-
-                                <div className="text-[10px] text-neutral-500 uppercase tracking-wider mb-3 line-clamp-1">
-                                    {subject.role}
-                                </div>
-
-                                <div className="flex items-center justify-between">
-                                    <div className="flex items-center gap-2 text-xs text-neutral-600">
-                                        <span>{NATIONALITIES[subject.nationality]?.flag}</span>
-                                        <span>{subject.nationality}</span>
-                                        <span>•</span>
-                                        <span>Age {subject.age}</span>
-                                    </div>
-                                    <ChevronRight className="w-4 h-4 text-neutral-700 group-hover:text-red-500 transition-colors" />
-                                </div>
-                            </Link>
-                        ))}
+                                </Link>
+                            );
+                        })}
                     </div>
                 )}
             </main>

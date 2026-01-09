@@ -16,6 +16,7 @@ export default function Subject() {
     const [notes, setNotes] = useState('');
     const [classification, setClassification] = useState('');
     const [saved, setSaved] = useState(false);
+    const [classificationSaved, setClassificationSaved] = useState(false);
 
     // Load saved data from localStorage
     useEffect(() => {
@@ -32,9 +33,17 @@ export default function Subject() {
         }
     }, [id, subject]);
 
+    // Auto-save classification immediately when changed
+    const handleClassificationChange = (newClassification) => {
+        setClassification(newClassification);
+        localStorage.setItem(`mh370_classification_${id}`, newClassification);
+        setClassificationSaved(true);
+        setTimeout(() => setClassificationSaved(false), 1500);
+    };
+
+    // Save notes only
     const handleSave = () => {
         localStorage.setItem(`mh370_notes_${id}`, notes);
-        localStorage.setItem(`mh370_classification_${id}`, classification);
         setSaved(true);
         setTimeout(() => setSaved(false), 2000);
     };
@@ -194,15 +203,20 @@ export default function Subject() {
 
                         {/* Classification Control */}
                         <div className="bg-neutral-900/60 border border-neutral-800 rounded-2xl p-6 no-print">
-                            <span className="text-[10px] text-neutral-600 font-bold uppercase block mb-4">Classification</span>
+                            <div className="flex items-center justify-between mb-4">
+                                <span className="text-[10px] text-neutral-600 font-bold uppercase">Classification</span>
+                                {classificationSaved && (
+                                    <span className="text-[9px] text-green-500 font-bold uppercase animate-pulse">Saved</span>
+                                )}
+                            </div>
                             <div className="grid grid-cols-2 gap-2">
                                 {Object.values(CLASSIFICATION).map(classif => (
                                     <button
                                         key={classif}
-                                        onClick={() => setClassification(classif)}
+                                        onClick={() => handleClassificationChange(classif)}
                                         className={`px-3 py-2 rounded-lg text-[10px] font-bold uppercase tracking-wider border transition-all ${classification === classif
-                                                ? getClassificationStyle(classif)
-                                                : 'bg-neutral-950 text-neutral-500 border-neutral-800 hover:border-neutral-700'
+                                            ? getClassificationStyle(classif)
+                                            : 'bg-neutral-950 text-neutral-500 border-neutral-800 hover:border-neutral-700'
                                             }`}
                                     >
                                         {classif}
@@ -382,8 +396,8 @@ export default function Subject() {
                                 <button
                                     onClick={handleSave}
                                     className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-bold uppercase tracking-wider transition-all ${saved
-                                            ? 'bg-green-600 text-white'
-                                            : 'bg-red-600 hover:bg-red-700 text-white'
+                                        ? 'bg-green-600 text-white'
+                                        : 'bg-red-600 hover:bg-red-700 text-white'
                                         }`}
                                 >
                                     <Save className="w-4 h-4" />

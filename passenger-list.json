@@ -1,0 +1,1245 @@
+{
+  "mh370_manifest": {
+    "summary": {
+      "total_souls_on_board": 239,
+      "total_passengers": 227,
+      "total_crew": 12
+    },
+    "passengers_by_nationality": {
+      "Chinese (153)": [
+        {
+          "no": 1,
+          "name": "AN/WENLAN",
+          "age": 65
+        },
+        {
+          "no": 2,
+          "name": "BAO/YUANHUA",
+          "age": 63
+        },
+        {
+          "no": 4,
+          "name": "BIAN/MAOQIN",
+          "age": 67
+        },
+        {
+          "no": 5,
+          "name": "BIAN/LIANGJING",
+          "age": 27
+        },
+        {
+          "no": 10,
+          "name": "CAO/RUI",
+          "age": 32
+        },
+        {
+          "no": 12,
+          "name": "CHE/JUNZHANG",
+          "age": 68
+        },
+        {
+          "no": 13,
+          "name": "CHEN/JIAN",
+          "age": 58
+        },
+        {
+          "no": 14,
+          "name": "CHEN/CHANGJUNMR",
+          "age": 35
+        },
+        {
+          "no": 16,
+          "name": "CHEN/YUNMS",
+          "age": 57
+        },
+        {
+          "no": 21,
+          "name": "DAI/SHULING",
+          "age": 58
+        },
+        {
+          "no": 24,
+          "name": "DI/JIABIN",
+          "age": 36
+        },
+        {
+          "no": 26,
+          "name": "DING/YING",
+          "age": 28
+        },
+        {
+          "no": 27,
+          "name": "DING/LIJUN",
+          "age": 43
+        },
+        {
+          "no": 28,
+          "name": "DING/YINGMS",
+          "age": 62
+        },
+        {
+          "no": 29,
+          "name": "DONG/GUOWEI",
+          "age": 48
+        },
+        {
+          "no": 30,
+          "name": "DOU/YUNSHANMR",
+          "age": 61
+        },
+        {
+          "no": 31,
+          "name": "DU/WEN",
+          "age": 50
+        },
+        {
+          "no": 32,
+          "name": "FENG/DONG",
+          "age": 21
+        },
+        {
+          "no": 33,
+          "name": "FENG/JIXIN",
+          "age": 70
+        },
+        {
+          "no": 34,
+          "name": "FU/BAOFENG",
+          "age": 28
+        },
+        {
+          "no": 35,
+          "name": "GAN/TAO",
+          "age": 44
+        },
+        {
+          "no": 36,
+          "name": "GAN/FUXIANG",
+          "age": 49
+        },
+        {
+          "no": 37,
+          "name": "GAO/GE",
+          "age": 27
+        },
+        {
+          "no": 40,
+          "name": "GUAN/WENJIEMR",
+          "age": 35
+        },
+        {
+          "no": 41,
+          "name": "HAN/JING",
+          "age": 53
+        },
+        {
+          "no": 43,
+          "name": "HOU/AIQINMS",
+          "age": 45
+        },
+        {
+          "no": 44,
+          "name": "HOU/BO",
+          "age": 35
+        },
+        {
+          "no": 45,
+          "name": "HU/SIWANCHD",
+          "age": 3
+        },
+        {
+          "no": 46,
+          "name": "HU/XIAONINGMR",
+          "age": 34
+        },
+        {
+          "no": 47,
+          "name": "HUANG/YIMS",
+          "age": 30
+        },
+        {
+          "no": 48,
+          "name": "HUANG/TIANHUI",
+          "age": 43
+        },
+        {
+          "no": 50,
+          "name": "JIA/PING",
+          "age": 32
+        },
+        {
+          "no": 51,
+          "name": "JIANG/CUIYUN",
+          "age": 62
+        },
+        {
+          "no": 52,
+          "name": "JIANG/XUEREN",
+          "age": 62
+        },
+        {
+          "no": 53,
+          "name": "JIANG/YINGMS",
+          "age": 27
+        },
+        {
+          "no": 54,
+          "name": "JIAO/WEIWEI",
+          "age": 32
+        },
+        {
+          "no": 55,
+          "name": "JIAO/WENXUE",
+          "age": 58
+        },
+        {
+          "no": 57,
+          "name": "JU/KUN",
+          "age": 32
+        },
+        {
+          "no": 58,
+          "name": "KANG/XU",
+          "age": 34
+        },
+        {
+          "no": 68,
+          "name": "LI/YANLIN",
+          "age": 29
+        },
+        {
+          "no": 69,
+          "name": "LI/ZHI",
+          "age": 41
+        },
+        {
+          "no": 70,
+          "name": "LI/GUOHUI",
+          "age": 56
+        },
+        {
+          "no": 71,
+          "name": "LI/HONGJING",
+          "age": 20
+        },
+        {
+          "no": 72,
+          "name": "LI/JIE",
+          "age": 27
+        },
+        {
+          "no": 73,
+          "name": "LI/MINGZHONG",
+          "age": 69
+        },
+        {
+          "no": 74,
+          "name": "LI/WENBO",
+          "age": 29
+        },
+        {
+          "no": 75,
+          "name": "LI/YAN",
+          "age": 31
+        },
+        {
+          "no": 77,
+          "name": "LI/YUCHEN",
+          "age": 27
+        },
+        {
+          "no": 78,
+          "name": "LI/ZHIJIN",
+          "age": 30
+        },
+        {
+          "no": 79,
+          "name": "LI/ZHIXIN",
+          "age": 35
+        },
+        {
+          "no": 80,
+          "name": "LILE/",
+          "age": 36
+        },
+        {
+          "no": 81,
+          "name": "LIANG/LUYANGMR",
+          "age": 60
+        },
+        {
+          "no": 82,
+          "name": "LIANG/XUYANG",
+          "age": 30
+        },
+        {
+          "no": 84,
+          "name": "LIN/ANNANMR",
+          "age": 27
+        },
+        {
+          "no": 85,
+          "name": "LIN/MINGFENG",
+          "age": 34
+        },
+        {
+          "no": 86,
+          "name": "LIU/FENGYING",
+          "age": 65
+        },
+        {
+          "no": 87,
+          "name": "LIU/JINPENGMR",
+          "age": 33
+        },
+        {
+          "no": 88,
+          "name": "LIU/QIANG",
+          "age": 40
+        },
+        {
+          "no": 89,
+          "name": "LIU/RUSHENG",
+          "age": 76
+        },
+        {
+          "no": 90,
+          "name": "LIU/SHUNCHAO",
+          "age": 46
+        },
+        {
+          "no": 91,
+          "name": "LIU/ZHONGFU",
+          "age": 72
+        },
+        {
+          "no": 92,
+          "name": "LOU/BAOTANG",
+          "age": 79
+        },
+        {
+          "no": 93,
+          "name": "LU/JIANHUA",
+          "age": 57
+        },
+        {
+          "no": 94,
+          "name": "LU/XIANCHU",
+          "age": 33
+        },
+        {
+          "no": 95,
+          "name": "LUI/CHING",
+          "age": 45
+        },
+        {
+          "no": 96,
+          "name": "LUO/WEI",
+          "age": 29
+        },
+        {
+          "no": 97,
+          "name": "MA/WENZHI",
+          "age": 57
+        },
+        {
+          "no": 98,
+          "name": "MA/JUNMR",
+          "age": 33
+        },
+        {
+          "no": 99,
+          "name": "MAIMAITIJIANG/A",
+          "age": 35
+        },
+        {
+          "no": 100,
+          "name": "MAO/TUGUI",
+          "age": 72
+        },
+        {
+          "no": 105,
+          "name": "MENG/BING",
+          "age": 40
+        },
+        {
+          "no": 106,
+          "name": "MENG/FANQUAN",
+          "age": 70
+        },
+        {
+          "no": 107,
+          "name": "MENG/GAOSHENG",
+          "age": 64
+        },
+        {
+          "no": 115,
+          "name": "OUYANG/XIN",
+          "age": 38
+        },
+        {
+          "no": 119,
+          "name": "SHI/XIANWEN",
+          "age": 26
+        },
+        {
+          "no": 123,
+          "name": "SONG/FEIFEIMR",
+          "age": 32
+        },
+        {
+          "no": 124,
+          "name": "SONG/CHUNLINGMS",
+          "age": 60
+        },
+        {
+          "no": 125,
+          "name": "SONG/KUN",
+          "age": 25
+        },
+        {
+          "no": 126,
+          "name": "SU/QIANGGUO",
+          "age": 71
+        },
+        {
+          "no": 136,
+          "name": "TANG/XUDONG",
+          "age": 31
+        },
+        {
+          "no": 137,
+          "name": "TANG/XUEZHUMS",
+          "age": 57
+        },
+        {
+          "no": 141,
+          "name": "TIAN/JUNWEI",
+          "age": 29
+        },
+        {
+          "no": 142,
+          "name": "TIAN/QINGJUN",
+          "age": 51
+        },
+        {
+          "no": 146,
+          "name": "WANG/SHOUXIAN",
+          "age": 69
+        },
+        {
+          "no": 147,
+          "name": "WANG/SHU",
+          "age": 61
+        },
+        {
+          "no": 148,
+          "name": "WANG/XIANJUN",
+          "age": 61
+        },
+        {
+          "no": 149,
+          "name": "WANG/CHUNHUAMR",
+          "age": 34
+        },
+        {
+          "no": 150,
+          "name": "WANG/CHUNYONG",
+          "age": 43
+        },
+        {
+          "no": 151,
+          "name": "WANG/DAN",
+          "age": 54
+        },
+        {
+          "no": 152,
+          "name": "WANG/HAITAO",
+          "age": 26
+        },
+        {
+          "no": 153,
+          "name": "WANG/HOUBIN",
+          "age": 28
+        },
+        {
+          "no": 154,
+          "name": "WANG/LINSHI",
+          "age": 59
+        },
+        {
+          "no": 156,
+          "name": "WANG/YONGGANGMR",
+          "age": 27
+        },
+        {
+          "no": 157,
+          "name": "WANG/YONGHUI",
+          "age": 33
+        },
+        {
+          "no": 158,
+          "name": "WANG/YONGQIANG",
+          "age": 30
+        },
+        {
+          "no": 159,
+          "name": "WANG/LIJUN",
+          "age": 49
+        },
+        {
+          "no": 161,
+          "name": "WANG/RUI",
+          "age": 35
+        },
+        {
+          "no": 162,
+          "name": "WANG/MOHENG",
+          "age": 2
+        },
+        {
+          "no": 167,
+          "name": "WEN/YONGSHENG",
+          "age": 34
+        },
+        {
+          "no": 168,
+          "name": "WEN/HAO",
+          "age": 32
+        },
+        {
+          "no": 169,
+          "name": "WENG/MEI",
+          "age": 39
+        },
+        {
+          "no": 172,
+          "name": "XIE/LIPING",
+          "age": 51
+        },
+        {
+          "no": 173,
+          "name": "XIN/XIXIMS",
+          "age": 32
+        },
+        {
+          "no": 174,
+          "name": "XING/FENGTAO",
+          "age": 36
+        },
+        {
+          "no": 175,
+          "name": "XING/QIAO",
+          "age": 27
+        },
+        {
+          "no": 176,
+          "name": "XIONG/DEMING",
+          "age": 63
+        },
+        {
+          "no": 177,
+          "name": "XU/CHUANE",
+          "age": 57
+        },
+        {
+          "no": 178,
+          "name": "YA/NA",
+          "age": 26
+        },
+        {
+          "no": 179,
+          "name": "YAN/LINGMR",
+          "age": 29
+        },
+        {
+          "no": 180,
+          "name": "YAN/PENG",
+          "age": 29
+        },
+        {
+          "no": 181,
+          "name": "YAN/XIAO",
+          "age": 27
+        },
+        {
+          "no": 182,
+          "name": "YANG/LI",
+          "age": 35
+        },
+        {
+          "no": 183,
+          "name": "YANG/AILINGMS",
+          "age": 60
+        },
+        {
+          "no": 184,
+          "name": "YANG/JIABAO",
+          "age": 26
+        },
+        {
+          "no": 185,
+          "name": "YANG/MEIHUA",
+          "age": 65
+        },
+        {
+          "no": 186,
+          "name": "YANG/QINGYUANMR",
+          "age": 57
+        },
+        {
+          "no": 187,
+          "name": "YANG/XIAOMINGMS",
+          "age": 59
+        },
+        {
+          "no": 188,
+          "name": "YAO/JIANFENG",
+          "age": 70
+        },
+        {
+          "no": 189,
+          "name": "YAO/LIFEI",
+          "age": 31
+        },
+        {
+          "no": 191,
+          "name": "YIN/BOYAN",
+          "age": 33
+        },
+        {
+          "no": 192,
+          "name": "YIN/YUEWANG",
+          "age": 21
+        },
+        {
+          "no": 193,
+          "name": "YUAN/JIN",
+          "age": 63
+        },
+        {
+          "no": 194,
+          "name": "YUE/GUIJUMS",
+          "age": 51
+        },
+        {
+          "no": 195,
+          "name": "YUE/WENCHAO",
+          "age": 26
+        },
+        {
+          "no": 197,
+          "name": "ZANG/LINGDI",
+          "age": 58
+        },
+        {
+          "no": 198,
+          "name": "ZHANG/CHI",
+          "age": 58
+        },
+        {
+          "no": 199,
+          "name": "ZHANG/LIQIN",
+          "age": 43
+        },
+        {
+          "no": 200,
+          "name": "ZHANG/QIMS",
+          "age": 31
+        },
+        {
+          "no": 201,
+          "name": "ZHANG/YAN",
+          "age": 45
+        },
+        {
+          "no": 202,
+          "name": "ZHANG/HUAMR",
+          "age": 43
+        },
+        {
+          "no": 203,
+          "name": "ZHANG/LIJUANMS",
+          "age": 61
+        },
+        {
+          "no": 204,
+          "name": "ZHANG/NAMS",
+          "age": 34
+        },
+        {
+          "no": 205,
+          "name": "ZHANG/SIMING",
+          "age": 71
+        },
+        {
+          "no": 206,
+          "name": "ZHANG/XIAOLEIMS",
+          "age": 32
+        },
+        {
+          "no": 207,
+          "name": "ZHANG/HUALIAN",
+          "age": 42
+        },
+        {
+          "no": 208,
+          "name": "ZHANG/JIANWU",
+          "age": 31
+        },
+        {
+          "no": 209,
+          "name": "ZHANG/JINQUAN",
+          "age": 72
+        },
+        {
+          "no": 210,
+          "name": "ZHANG/MENG",
+          "age": 29
+        },
+        {
+          "no": 211,
+          "name": "ZHANG/XUEWENMR",
+          "age": 61
+        },
+        {
+          "no": 212,
+          "name": "ZHANG/YAN",
+          "age": 36
+        },
+        {
+          "no": 214,
+          "name": "ZHANG/YANHUI",
+          "age": 44
+        },
+        {
+          "no": 215,
+          "name": "ZHANG/ZHONGHAI",
+          "age": 43
+        },
+        {
+          "no": 216,
+          "name": "ZHANG/SHAOHUA",
+          "age": 32
+        },
+        {
+          "no": 217,
+          "name": "ZHAO/GANGMR",
+          "age": 46
+        },
+        {
+          "no": 218,
+          "name": "ZHAO/QIWEIMR",
+          "age": 37
+        },
+        {
+          "no": 219,
+          "name": "ZHAO/YINGXINCHD",
+          "age": 3
+        },
+        {
+          "no": 220,
+          "name": "ZHAO/PENG",
+          "age": 25
+        },
+        {
+          "no": 222,
+          "name": "ZHAO/ZHAOFANG",
+          "age": 73
+        },
+        {
+          "no": 223,
+          "name": "ZHENG/RUIXIAN",
+          "age": 42
+        },
+        {
+          "no": 224,
+          "name": "ZHOU/FENG",
+          "age": 56
+        },
+        {
+          "no": 225,
+          "name": "ZHOU/JINLING",
+          "age": 61
+        },
+        {
+          "no": 226,
+          "name": "ZHOU/SHIJIE",
+          "age": 64
+        },
+        {
+          "no": 227,
+          "name": "ZHU/JUNYAN",
+          "age": 41
+        }
+      ],
+      "Chinese Taipei (1)": [
+        {
+          "no": 18,
+          "name": "CHUANG/HSIULINGMS",
+          "age": 45
+        }
+      ],
+      "Malaysian (38)": [
+        {
+          "no": 6,
+          "name": "BIBYNAZLI/MOHDHASSIM",
+          "age": 62
+        },
+        {
+          "no": 11,
+          "name": "CHAN/HUANPEENMR",
+          "age": 46
+        },
+        {
+          "no": 15,
+          "name": "CHEN/WEI",
+          "age": 43
+        },
+        {
+          "no": 17,
+          "name": "CHEW/KARMOOIMS",
+          "age": 31
+        },
+        {
+          "no": 19,
+          "name": "CHNG/MEI",
+          "age": 33
+        },
+        {
+          "no": 22,
+          "name": "DAISY/ANNE",
+          "age": 56
+        },
+        {
+          "no": 25,
+          "name": "DINA/MOHAMEDYUNUSRAMLI",
+          "age": 30
+        },
+        {
+          "no": 39,
+          "name": "GUAN/HUAJINMS",
+          "age": 34
+        },
+        {
+          "no": 42,
+          "name": "HASHIM/NOORIDA",
+          "age": 57
+        },
+        {
+          "no": 49,
+          "name": "HUE/PUIHENGMR",
+          "age": 66
+        },
+        {
+          "no": 56,
+          "name": "JINGHANG/JEE",
+          "age": 41
+        },
+        {
+          "no": 59,
+          "name": "KOH/TIONGMENG",
+          "age": 40
+        },
+        {
+          "no": 66,
+          "name": "LEE/KAHKINMR",
+          "age": 32
+        },
+        {
+          "no": 67,
+          "name": "LEE/SEWCHUMDM",
+          "age": 55
+        },
+        {
+          "no": 83,
+          "name": "LIM/POWCHUAMS",
+          "age": 43
+        },
+        {
+          "no": 102,
+          "name": "MARIA/MOHAMEDYUNUSRAMLI",
+          "age": 52
+        },
+        {
+          "no": 103,
+          "name": "MATRAHIM/NORFADZILLAHMISS",
+          "age": 39
+        },
+        {
+          "no": 108,
+          "name": "MOHDKHAIRULAMRI/SELAMATMR",
+          "age": 29
+        },
+        {
+          "no": 109,
+          "name": "MOHAMADSOFUAN/IBRAHIMMR",
+          "age": 33
+        },
+        {
+          "no": 110,
+          "name": "MUHAMMADRAZAHAN/ZAMANIMR",
+          "age": 24
+        },
+        {
+          "no": 111,
+          "name": "MUSTAFA/SUHAILIMISS",
+          "age": 31
+        },
+        {
+          "no": 113,
+          "name": "NG/MAYLIMS",
+          "age": 37
+        },
+        {
+          "no": 114,
+          "name": "NORLIAKMAR/HAMIDMDM",
+          "age": 33
+        },
+        {
+          "no": 116,
+          "name": "PUSPANATHAN/SUBRAMANIAN",
+          "age": 34
+        },
+        {
+          "no": 117,
+          "name": "RAMLAN/SAFUANMR",
+          "age": 32
+        },
+        {
+          "no": 121,
+          "name": "SIM/KENGWEI",
+          "age": 53
+        },
+        {
+          "no": 131,
+          "name": "TAN/TEIKHINMR",
+          "age": 32
+        },
+        {
+          "no": 132,
+          "name": "TAN/AHMENGMR",
+          "age": 46
+        },
+        {
+          "no": 133,
+          "name": "TAN/WEICHEWMR",
+          "age": 19
+        },
+        {
+          "no": 134,
+          "name": "TAN/CHONGLING",
+          "age": 48
+        },
+        {
+          "no": 135,
+          "name": "TAN/SIOH",
+          "age": 42
+        },
+        {
+          "no": 139,
+          "name": "TEE/LINKEONGMR",
+          "age": 50
+        },
+        {
+          "no": 140,
+          "name": "TEOH/KIMLUNMR",
+          "age": 36
+        },
+        {
+          "no": 143,
+          "name": "TONG/SOONLEEMR",
+          "age": 31
+        },
+        {
+          "no": 145,
+          "name": "WAN/HOCKKHOONMR",
+          "age": 42
+        },
+        {
+          "no": 170,
+          "name": "WONG/SAISANGMR",
+          "age": 53
+        },
+        {
+          "no": 190,
+          "name": "YAP/CHEEMENGMR",
+          "age": 39
+        },
+        {
+          "no": 196,
+          "name": "YUSOP/MUZIMR",
+          "age": 50
+        }
+      ],
+      "Indonesian (7)": [
+        {
+          "no": 122,
+          "name": "SIREGAR/FIRMAN",
+          "age": 25
+        },
+        {
+          "no": 127,
+          "name": "SUADAYA/FERRYINDRAMR",
+          "age": 42
+        },
+        {
+          "no": 128,
+          "name": "SUADAYA/HERRYINDRAMR",
+          "age": 35
+        },
+        {
+          "no": 129,
+          "name": "SUGIANTO/LOMR",
+          "age": 47
+        },
+        {
+          "no": 138,
+          "name": "TANURISAM/INDRASURIAMR",
+          "age": 57
+        },
+        {
+          "no": 144,
+          "name": "VINNY/CHYNTHYATIOMRS",
+          "age": 47
+        },
+        {
+          "no": 155,
+          "name": "WANG/WILLYSURIJANTOMR",
+          "age": 53
+        }
+      ],
+      "Australian (6)": [
+        {
+          "no": 8,
+          "name": "BURROWS/RODNEYMR",
+          "age": 59
+        },
+        {
+          "no": 9,
+          "name": "BURROWS/MARYMRS",
+          "age": 54
+        },
+        {
+          "no": 38,
+          "name": "GU/NAIJUN",
+          "age": 31
+        },
+        {
+          "no": 64,
+          "name": "LAWTON/CATHERINEMRS",
+          "age": 54
+        },
+        {
+          "no": 65,
+          "name": "LAWTON/ROBERTMR",
+          "age": 58
+        },
+        {
+          "no": 76,
+          "name": "LI/YUAN",
+          "age": 33
+        }
+      ],
+      "Indian (5)": [
+        {
+          "no": 60,
+          "name": "KOLEKAR/CHETANA",
+          "age": 55
+        },
+        {
+          "no": 61,
+          "name": "KOLEKAR/SWANAND",
+          "age": 23
+        },
+        {
+          "no": 62,
+          "name": "KOLEKAR/VINOD",
+          "age": 59
+        },
+        {
+          "no": 118,
+          "name": "SHARMA/CHANDRIKAMS",
+          "age": 51
+        },
+        {
+          "no": 120,
+          "name": "SHIRSATH/KRANTI",
+          "age": 44
+        }
+      ],
+      "French (4)": [
+        {
+          "no": 163,
+          "name": "WATTRELOS/AMBRE",
+          "age": 14
+        },
+        {
+          "no": 164,
+          "name": "WATTRELOS/HADRIEN",
+          "age": 17
+        },
+        {
+          "no": 165,
+          "name": "WATTRELOS/LAURENCE",
+          "age": 52
+        },
+        {
+          "no": 221,
+          "name": "ZHAO/YAN",
+          "age": 18
+        }
+      ],
+      "American (3)": [
+        {
+          "no": 104,
+          "name": "MENG/NICOLECHD",
+          "age": 4
+        },
+        {
+          "no": 171,
+          "name": "WOOD/PHILIP",
+          "age": 51
+        },
+        {
+          "no": 213,
+          "name": "ZHANG/YAN",
+          "age": 2
+        }
+      ],
+      "New Zealander (2)": [
+        {
+          "no": 160,
+          "name": "WANG/XIMIN",
+          "age": 50
+        },
+        {
+          "no": 166,
+          "name": "WEEKS/PAULMR",
+          "age": 39
+        }
+      ],
+      "Ukrainian (2)": [
+        {
+          "no": 20,
+          "name": "CHUSTRAK/OLEG",
+          "age": 45
+        },
+        {
+          "no": 23,
+          "name": "DEINEKA/SERGII",
+          "age": 45
+        }
+      ],
+      "Canadian (2)": [
+        {
+          "no": 3,
+          "name": "ΒΑΙ/ΧΙΑΟΜΟ",
+          "age": 37
+        },
+        {
+          "no": 112,
+          "name": "MUKHERJEE/MUKTESH",
+          "age": 42
+        }
+      ],
+      "Russian (1)": [
+        {
+          "no": 7,
+          "name": "BRODSKII/NIKOLAI",
+          "age": 43
+        }
+      ],
+      "Austrian (1)": [
+        {
+          "no": 63,
+          "name": "KOZEL/CHRISTIAN",
+          "age": 30
+        }
+      ],
+      "Italian (1)": [
+        {
+          "no": 101,
+          "name": "MARALDI/LUIGI",
+          "age": 37
+        }
+      ],
+      "Dutch (1)": [
+        {
+          "no": 130,
+          "name": "SURTIDAHLIA/MRS",
+          "age": 50
+        }
+      ]
+    },
+    "crew_members": {
+      "Malaysian (12)": [
+        {
+          "no": 1,
+          "name": "ZAHARIE BIN AHMAD SHAH",
+          "role": "TECH CREW"
+        },
+        {
+          "no": 2,
+          "name": "FARIQ BIN AB HAMID",
+          "role": "TECH CREW"
+        },
+        {
+          "no": 3,
+          "name": "PATRICK FRANCIS GOMES",
+          "role": "CABIN CREW"
+        },
+        {
+          "no": 4,
+          "name": "ANDREW NARI",
+          "role": "CABIN CREW"
+        },
+        {
+          "no": 5,
+          "name": "GOH SOCK LAY",
+          "role": "CABIN CREW"
+        },
+        {
+          "no": 6,
+          "name": "TAN SER KUIN",
+          "role": "CABIN CREW"
+        },
+        {
+          "no": 7,
+          "name": "WAN SWAID BIN WAN ISMAIL",
+          "role": "CABIN CREW"
+        },
+        {
+          "no": 8,
+          "name": "JUNAIDI BIN MOHD KASSIM",
+          "role": "CABIN CREW"
+        },
+        {
+          "no": 9,
+          "name": "MOHD HAZRIN BIN MOHAMED HASNAN",
+          "role": "CABIN CREW"
+        },
+        {
+          "no": 10,
+          "name": "NG YAR CHIEN",
+          "role": "CABIN CREW"
+        },
+        {
+          "no": 11,
+          "name": "FOONG WAI YUENG",
+          "role": "CABIN CREW"
+        },
+        {
+          "no": 12,
+          "name": "TAN SIZE HIANG",
+          "role": "CABIN CREW"
+        }
+      ]
+    },
+    "analytical_notes": {
+      "stolen_passports": "Individuals listed as Austrian (Christian Kozel) and Italian (Luigi Maraldi) were later identified as Iranian nationals traveling on stolen passports[cite: 8, 11].",
+      "china_taiwan_grouping": "The manifest lists 153 passengers as 'Chinese' and 1 passenger as 'Chinese Taipei'.",
+      "malaysian_total": "There are 38 Malaysian passengers and 12 Malaysian crew members[cite: 3, 8, 11, 16, 20, 28]."
+    }
+  }
+}
